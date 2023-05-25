@@ -109,7 +109,9 @@ class _TestPageState extends State<TestPage> {
               child: SizedBox(
                 height: MediaQuery.of(context).size.width,
                 width: MediaQuery.of(context).size.width * 16/9,
-                child: Container(),
+                child: VideoPlayer(
+                    _videoPlayerController
+                ),
               ),
             ) :
             Container()
